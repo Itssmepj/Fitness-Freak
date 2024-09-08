@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  user-select: none;
 }
 
 * {
@@ -693,6 +694,12 @@ header .ham-burger.active span:nth-child(2) {
 
 .price-package .price-btn:hover {
   background-color: #32b1ce;
+  border: none;
+}
+
+.price-package .btn:active {
+  border: none;
+  background-color: #32b1ce;
 }
 
 .price-package .content .box .inner .img img {
@@ -948,5 +955,13 @@ header .ham-burger.active span:nth-child(2) {
 @media (max-width: 550px) {
   .home h1 {
     font-size: 45px;
+  }
+
+  .price-package .col {
+    width: 90%;
+  }
+
+  .price-package .card-body {
+    padding: 30px 15px;
   }
 }
